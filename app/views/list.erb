@@ -1,0 +1,21 @@
+<h1>Those are the URL you've created</h1>
+
+<table>
+  <thead>
+  <th>Original URL</th>
+  <th>Short URL</th>
+  <th>Click count</th>
+  </thead>
+  <tbody>
+
+<% @user_urls.each do |url| %>
+  <tr>
+    <td><a href="<%= url.url %>"><%= url.url %></a></td>
+    <td><a href="http://localhost:9393/<%= url.short_url %>">http://localhost:9393/<%= url.short_url %></a></td>
+    <td><%= url.click_count %></td>
+  </tr>
+<% end %>
+
+  </tbody>
+</table>
+

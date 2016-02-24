@@ -1,0 +1,13 @@
+<h1>Welcome to our Bitly Generator!</h1>
+
+<form id = "bitly" method = "post" action = "/urls" >
+  <p>Input a URL:</p>
+  <input type = "textfield" name = "original_url" placeholder = "type it here!">
+  <input type = "submit" value = "Shorten!">
+</form>
+
+<div id = "result"></div>
+
+<a href=<%="/list/#{@user_id}" %>>Your links:</a>
+<br>
+<a href = "/logout">Log out!</a>
